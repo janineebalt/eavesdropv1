@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janine's capstone project</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    
+    <header>
+      <div id="home">
+        <button id="homebtn" onclick="window.location.href='about.html'">eavesdrop</button>
+        <a href="about.html"></a>
+      </div>
+    </header>
+    
+    <main>
+
+
+
+        <canvas id="visualization"></canvas>
+
+        <div id="audio-bar">
+
+             <!-- Choose file button -->
+          <div class="upload-btn-wrapper">
+            <button id="uploadButton" class="btn">upload a file</button>
+            <input type="file" onchange="previewFile()" accept="audio/*"><br>
+          </div>
+
+          <div class="demo-audio">
+            <button id="demo-audio-btn" src="testaudio.mp3" class="btn">demo audio</button>
+          </div>
+          
+
+          <!-- audio player -->
+          <div id="audio-player">
+            <audio src="" controls></audio>
+          </div> 
+  
+          <!-- Show uploaded file -->
+          <div id="result"></div>
+
+          <div id="options-container">
+    
+            <!-- Visualization Selector -->
+            <label for="shape-selector">select visualization shape → </label>
+            <!-- Dropdown for visualization -->
+            <select id="shape-selector" name="shape-selector">
+              <option value="bird">birds</option>
+              <option value="hand">hands</option>
+              <option value="circle">circles</option> 
+              <option value="broken heart">broken heart</option>
+              <option value="star">star</option>
+            </select>
+    
+            </div>
+
+        </div>
+        
+       
+        
+
+
+      <script src="main.js"></script>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2023 janine baltazar</p>
+    </footer>
+    
+  </body>
+</html>
